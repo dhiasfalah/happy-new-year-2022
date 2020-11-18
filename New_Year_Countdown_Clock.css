@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins', sans-serif;
+}
+.Count{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../imges/bga1.jpg);
+    background-size: cover;
+    display: flex;
+}
+.Count .CountdownBx{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Count .CountdownBx h2{
+    text-align: center;
+    font-size: 3vw;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+    line-height: 4em;
+}
+.Count .CountdownBx h2 span{
+    font-size: 10vw;
+    font-weight: 700;
+}
+.Count .CountdownBx h2 span i{
+    font-style: initial;
+    color: #fb1077;
+}
+.Count .CountdownBx .Countdown{
+    margin-top: 60px;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Count .CountdownBx .Countdown div{
+    position: relative;
+    width: 150px;
+    text-align: center;
+    color: #fff;
+    font-size: 5vw;
+    font-weight: 500;
+    margin: 0 15px;
+    margin-top: -25px;
+}
+.Count .CountdownBx .Countdown div:before{
+    content: 'text';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    color: white;
+    font-size: 0.35em;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.Count .CountdownBx .Countdown div#day:before{
+    content: 'Days';
+}
+.Count .CountdownBx .Countdown div#hour:before{
+    content: 'hour';
+}
+.Count .CountdownBx .Countdown div#minute:before{
+    content: 'minute';
+}
+.Count .CountdownBx .Countdown div#second:before{
+    content: 'second';
+}
+.Count .CountdownBx .Countdown div#second,
+.Count .CountdownBx .Countdown div#second:before{
+    color: #fb1077;
+}
+
+/* @media (max-width: 991px){
+    .Count .imgBx{
+        display: flex;
+    }
+    .Count .CountdownBx{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .Count .CountdownBx h2{
+        font-size: 1.1em;
+    }
+    .Count .CountdownBx .Countdown{
+        height: 100px;
+    }
+    .Count .CountdownBx .Countdown div{
+        width: 80px;
+        font-size: 2em;
+        margin: 0;
+        margin-top: -25px;
+    }
+
+} */
