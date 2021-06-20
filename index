@@ -21,7 +21,7 @@
         </div>
     </section>
     <script>
-        const CountDate = new Date('jan 1, 2021 00:00:00').getTime();
+        const CountDate = new Date('jan 1, 2022 00:00:00').getTime();
 
         function newYear() {
             const now = new Date().getTime();
